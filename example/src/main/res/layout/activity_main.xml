@@ -50,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         float:fletPaddingBottom="10dp"
-        float:fletTextAppearance="@style/floatlabelededittext">
+        float:fletHintTextAppearance="@style/floatlabelededittext">
 
         <EditText
             android:layout_width="match_parent"
@@ -58,5 +58,42 @@
             android:hint="Styled Hint"
             android:inputType="textPassword" />
     </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+    <!-- put passive message -->
+    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+        android:id="@+id/labeledEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        float:fletPassiveMessage="This is the passive message"
+        float:fletValidMessage="This is the valid message"
+        float:fletValidTextAppearance="@style/floatlabelededittextvalid"
+        float:fletValidTextColor="#00FF00"
+        float:fletErrorTextAppearance="@style/floatlabelededittexterror"
+        float:fletErrorTextColor="#FF0000">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="This is the hint" />
+    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+    <Button
+        android:id="@+id/buttonValid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="setValid"/>
+
+    <Button
+        android:id="@+id/buttonPassif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="setPassif"/>
+
+    <Button
+        android:id="@+id/buttonError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="setError"/>
 
 </LinearLayout>

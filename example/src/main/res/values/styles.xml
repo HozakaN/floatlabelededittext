@@ -9,4 +9,13 @@
     <style name="floatlabelededittext">
         <item name="android:textColor">#FF0000</item>
     </style>
+
+    <style name="floatlabelededittextvalid">
+        <item name="android:textColor">#00FF00</item>
+    </style>
+
+    <style name="floatlabelededittexterror">
+        <item name="android:textColor">#FF0000</item>
+    </style>
+
 </resources>

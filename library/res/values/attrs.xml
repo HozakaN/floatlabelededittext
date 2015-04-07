@@ -2,13 +2,25 @@
 <resources>
 
     <declare-styleable name="FloatLabeledEditText">
-        <attr name="fletTextAppearance" format="reference" />
+        <attr name="fletHintTextAppearance" format="reference" />
+        <attr name="fletExplicativeMessageTextAppearance" format="reference" />
+        <attr name="fletValidTextAppearance" format="reference" />
+        <attr name="fletErrorTextAppearance" format="reference" />
+
         <attr name="fletPadding" format="reference|dimension" />
         <attr name="fletPaddingLeft" format="reference|dimension" />
         <attr name="fletPaddingTop" format="reference|dimension" />
         <attr name="fletPaddingRight" format="reference|dimension" />
         <attr name="fletPaddingBottom" format="reference|dimension" />
         <attr name="fletBackground" format="reference|color" />
+
+        <attr name="fletPassiveMessage" format="reference|string" />
+        <attr name="fletValidMessage" format="reference|string" />
+        <attr name="fletErrorMessage" format="reference|string" />
+
+        <attr name="fletPassiveTextColor" format="reference|color" />
+        <attr name="fletValidTextColor" format="reference|color" />
+        <attr name="fletErrorTextColor" format="reference|color" />
     </declare-styleable>
 
 </resources>

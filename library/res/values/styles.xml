@@ -1,0 +1,5 @@
+<resources>
+    <style name="ExplicativeMessageDefaultStyle">
+        <item name="android:textColor">@color/md_grey_400</item>
+    </style>
+</resources>

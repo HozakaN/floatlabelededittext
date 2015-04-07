@@ -4,6 +4,10 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
+import com.wrapp.floatlabelededittext.FloatLabeledEditText;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,6 +16,29 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final FloatLabeledEditText labelEt = (FloatLabeledEditText) findViewById(R.id.labeledEditText);
+
+        findViewById(R.id.buttonValid).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                labelEt.setValid();
+            }
+        });
+
+        findViewById(R.id.buttonPassif).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                labelEt.setPassive();
+            }
+        });
+
+        findViewById(R.id.buttonError).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                labelEt.setError();
+            }
+        });
     }
 
 
